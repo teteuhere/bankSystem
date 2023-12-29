@@ -11,23 +11,23 @@ public class App {
         int action = 0;
 
         String Start = """
-            
-                Dados iniciais de cliente:
 
-                    Nome: %s
-                    Tipo: %s
-                    Saldo: R$ %.2f
+                Client info:
+
+                    Name: %s
+                    AC: %s
+                    Amount: R$ %.2f
                     """.formatted(name, account, cash, action);
         
         System.out.println(Start);
 
         String message = """
 
-                Operações disponiveis:
-                1 - Consultar saldo
-                2 - Receber valor
-                3 - Transferir valor
-                4 - Encerrar
+                Available operations:
+                1 - Amount
+                2 - Receive amount
+                3 - Transfer amount
+                4 - Finish
 
                 What do you want to do?(%s)
                     """.formatted(name, account, cash, action);

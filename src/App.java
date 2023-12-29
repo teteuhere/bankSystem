@@ -10,13 +10,19 @@ public class App {
         double cash = 2500;
         int action = 0;
 
-        String message = """
+        String Start = """
+            
                 Dados iniciais de cliente:
 
                     Nome: %s
                     Tipo: %s
                     Saldo: R$ %.2f
-                    
+                    """.formatted(name, account, cash, action);
+        
+        System.out.println(Start);
+
+        String message = """
+
                 Operações disponiveis:
                 1 - Consultar saldo
                 2 - Receber valor
